@@ -1,2 +1,13 @@
-// dry-run
-<img width="279" height="349" alt="Image" src="https://github.com/user-attachments/assets/d38c6c4a-9b9b-47cc-9907-d5c465a6d206" />
+# Two Sum (DSA) - JavaScript
+
+Simple implementations of the classic Two Sum problem (LeetCode #1).
+
+Problem: Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`. You may assume exactly one solution and you may not use the same element twice.
+
+## Files
+- `two-sum.js` — O(n) solution (using Map) and an optional brute-force version for comparison.
+
+## Usage
+Run the example:
+```bash
+node two-sum.js
