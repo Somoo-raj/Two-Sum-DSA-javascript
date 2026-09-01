@@ -1,17 +1,20 @@
 // problem: LeetCode #1 - two sum
-// time complexity 
+// HashMap solution: O(n) time, O(n) space
 
 let nums = [5, 1, 9, 6]; // DSA two sum
 let target = 7;
 
-var twoSum = function(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums [i] + nums[j] === target) {
-                return [i, j];
-            }
-        }
-    }
-};
+let map = {};
 
-console.log(twoSum(nums, target)); // [1, 3] time complexity O(n**2)
+    for(let i = 0; i < nums.length; i++) {
+        let currentNum = nums[i];
+        let complement  = target - currentNum;
+
+        if (complement in map) {
+            return[map[complement], 1];
+        }
+        map[currentNum] = i
+    };
+
+
+
